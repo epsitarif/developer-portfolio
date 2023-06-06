@@ -1,53 +1,272 @@
-font-family: 'Open Sans', sans-serif;
-
-
-/* banner styls*/
-.banner{
-    display: flex;
-    margin: 0 200px;
-    align-items: left;
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: Work Sans;
 }
-.banner-title{
-    font-weight: 500;
-    font-size: 85px;
-    margin-bottom: 20px;
-   
+
+/* banner styles here*/
+.header-banner {
+    background-image: url(../images/banner/banner3.png);
+    height: 700px;
+    text-align: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 130px;
 }
-.banner-description{
-    color: #757575;
-    font-size: 18px;
+
+.banner-container {
+    margin-left: 845px;
+    margin-right: 200px;
+    
+
+}
+
+.banner-container .banner-title {
+    color: #FFFFFF;
+    font-size: 65px;
+    font-weight: 700px;
+    margin-bottom: 24px;
+}
+
+.banner-container .banner-description {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
     margin-bottom: 30px;
 }
-/*btn-primary*/
-.btn-primary{
-    font-weight: 700;
+.btn-primary {
+    background: #F15B22;
+    color: #FFFFFF;
+
     font-size: 20px;
+    font-weight: 600;
     height: 64px;
+    padding: 20px 25px;
+    border: none;
     border-radius: 5px;
-    background: #fd6e0a;
 }
-.header{
-    background: darkgray
+
+.btn-primary:hover {
+    background-color: gold;
 }
-/*pic*/
-.pic{
-    margin: 0 200px;
+main {
+    padding: 0 205px;
+}
+.failure-container {
+    display: flex;
+    gap: 85px;
     align-items: center;
+    margin-right: 40px;
 }
-.pic-title{
-    bottom: right;
+
+.failure-details {
+    padding-top: 130px;
 }
-/* my plan*/
-.my-plan{
+
+.failure-details .failure-title {
+    color: #151414;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.failure-details .failure-description {
+    color: #444343;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.failure-details ul li::before {
+    content: '\2714\0020';
+    color: green;
+}
+
+.failure-details ul li {
+    list-style: none;
+    color: #444343;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.plan-container {
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.plan-types {
+    display: flex;
+    gap: 85px;
+    justify-content: center;
+}
+
+.plan-items img {
+    margin-bottom: 25px;
+}
+
+.plan-title {
+    color: #151414;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 130px 0 50px 0;
+}
+
+.plan-sub-title {
+    color: #151414;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.plan-description {
+    color: #737272;
+    font-size: 25px;
+    font-weight: 500;
+}
+.blending-image {
+    height: 270px;
+    background-image: url(../images/gradient1.png), url(../images/watch.png);
+    background-blend-mode: normal;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.blending-image-container {
+    padding: 60px 0 0 65px;
+}
+
+.blending-image-title {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* developer section */
+
+
+.developer {
+    margin-top: 90px;
+    height: 300px;
+    background-color: #212529;
+    box-shadow: 7px 7px 7px #212529;
+}
+
+.developer-container {
+    display: flex;
+    gap: 70px;
+}
+
+.developer-details {
+    margin: 20px 0px 0 70px;
+    padding-top: 90px;
+    padding-right: 30px;
+    color: white;
+}
+
+.developer-container img {
+    margin: 70px 90px 0 0;
+}
+
+.developer-title {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.developer-description {
+    font-size: 18px;
+    font-weight: 400;
+}
+/* information footer design */
+.information {
+    height: 580px;
+    background-color: #151414;
     margin-top: 100px;
 }
-.skills-container{
-    display: flex;
-    text-align: center;}
-    .btn-high{ font-weight: 100;
-        font-size: 20px;
-        height: 64px;
-        border-radius: 5px;
-        background: #fd6e0a;
 
-    } 
+.contact-details {
+    margin-top: 130px;
+    margin-left: 200px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 330px;
+    align-items: center;
+}
+
+.contact-title {
+    color: #F8F8F8;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-description {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.contact-email {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.contact-phone {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.contact-details a {
+    margin-right: 20px;
+}
+.subscription-container {
+    margin-right: 230px;
+}
+
+.subscription-title {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.subscription-container form input[type="text"] {
+    width: 325px;
+    height: 65px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #151414;
+    border: 1px solid white;
+    color: white;
+    padding-left: 20px;
+}
+
+.subscription-container form input::placeholder {
+    color: #F3F3F3;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.subscription-container form input[type="submit"] {
+    height: 65px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 35px;
+    background-color: #6c5ce7;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.subscription-container form input[type="submit"]:hover {
+    background-color: #fdcb6e;
+}
